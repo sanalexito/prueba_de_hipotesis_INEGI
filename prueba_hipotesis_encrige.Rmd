@@ -1,6 +1,6 @@
 ---
 title: "ENCRIGE 2020"
-subtitle: <img src="C:/Users/52552/Alexito/ENCRIGE/2021/Varios/PH/logoINEGI.png" width="120" align="right"/>
+subtitle: <img src="~/logoINEGI.png" width="120" align="right"/>
 date: "12/8/2021"
 output: html_document
 ---
@@ -57,7 +57,7 @@ Sin embargo, es preciso mencionar que no debe hacerse la prueba de hipótesis co
 
 Por otra parte, con la información pertinente podemos apoyarnos de las tablas estadísticas para conocer la información necesaria para llevar a cabo la prueba de hipótesis de forma correcta.
 
-![Tabla 1. ](C:/Users/52552/Alexito/ENCRIGE/2021/Varios/PH/tabla-t.PNG)
+![Tabla 1. ](~/tabla-t.PNG)
 
 
 
@@ -178,9 +178,9 @@ $$|t| = 0.5152 \leq 1.96$$ por lo que no se rechaza $H_0.$
 
 # Comparación de los contrastes usando $t$ y $\hat{t}$
 
-De las pruebas de hipótesis que se tienen se tomará como ejemplo la diapositiva 28 de la presentación nacional.
+De las pruebas de hipótesis que se tienen se tomará como ejemplo la diapositiva 28 de la presentación nacional de la ENCRIGE 2020.
 ```{r,echo=F}
-d_26<-openxlsx::read.xlsx("C:/Users/52552/Alexito/ENCRIGE/2021/Varios/PH/d_26.xlsx",1)
+d_26<-openxlsx::read.xlsx("~/d_26.xlsx",1)
 d_2016 <- d_26[2:8,c(1:3)]
 d_2020 <- d_26[2:8,c(7:9)]
 colnames(d_2016) <- c("ENCRIGE_2016","REL","SE")
@@ -241,4 +241,3 @@ d$Tendencia_bis
 
 > Made by: Alejandro Sánchez Peralta
 
-## Departamento de Análisis y Evaluación de Modelos de Información
